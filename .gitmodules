@@ -1,0 +1,3 @@
+[submodule "mern-ecommerce"]
+	path = mern-ecommerce
+	url = https://github.com/vaibhav797/mern-ecommerce
