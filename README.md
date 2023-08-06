@@ -55,6 +55,9 @@ An E-commerce web Application which offers a seamless and secure shopping experi
     <td><img src="./src/assets/order-success.png" width=400 height=200></td>
   </tr>
   <tr>
+    <td><img src="./src/assets/invoice-mail.png" width=400 height=200></td>
+  </tr>
+  <tr>
     <th>Admin Panel</th>
   </tr>
   <tr>
