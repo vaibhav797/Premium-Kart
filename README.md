@@ -17,6 +17,9 @@ An E-commerce web Application which offers a seamless and secure shopping experi
     <td><img src="./src/assets/signup.png" width=400 height=200></td>
   </tr>
   <tr>
+    <td><img src="./src/assets/forgot-password.png" width=400 height=200></td>
+  </tr>
+  <tr>
     <th>Home</th>
   </tr>
   <tr>
