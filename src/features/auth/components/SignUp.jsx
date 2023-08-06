@@ -2,7 +2,8 @@ import React from "react";
 import { Link, Navigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { createUserAsync, selectError, selectLoggedInUser } from "../authSlice";
+import { createUserAsync, selectError, selectLoggedInUser, selectLoginStatus } from "../authSlice";
+import { Oval } from "react-loader-spinner";
 
 const SignUp = () => {
   const {
@@ -16,6 +17,7 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const user = useSelector(selectLoggedInUser);
   const error = useSelector(selectError);
+  const signupStatus = useSelector(selectLoginStatus);
 
 
   return (
@@ -154,7 +156,22 @@ const SignUp = () => {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Sign Up
+                {signupStatus === "loading" ? (
+                  <Oval
+                    height={24}
+                    width={24}
+                    color="white"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel="oval-loading"
+                    secondaryColor="white"
+                    strokeWidth={2}
+                    strokeWidthSecondary={2}
+                  />
+                ) : (
+                  "Sign Up"
+                )}
               </button>
             </div>
           </form>

@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import { resetPasswordRequestAsync, selectMailSent } from "../authSlice";
+import { resetPasswordRequestAsync, selectLoginStatus, selectMailSent } from "../authSlice";
+import { Oval } from "react-loader-spinner";
 
 export function ForgotPassword() {
   const {
@@ -13,6 +14,7 @@ export function ForgotPassword() {
   const err = errors;
   const dispatch = useDispatch();
   const mailSent = useSelector(selectMailSent);
+  const status = useSelector(selectLoginStatus);
 
   return (
     <>
@@ -75,7 +77,22 @@ export function ForgotPassword() {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Send Email
+                {status === "loading" ? (
+                  <Oval
+                    height={24}
+                    width={24}
+                    color="white"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel="oval-loading"
+                    secondaryColor="white"
+                    strokeWidth={2}
+                    strokeWidthSecondary={2}
+                  />
+                ) : (
+                  "Send Email"
+                )}
               </button>
             </div>
           </form>

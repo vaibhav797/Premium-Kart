@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch, useSelector } from "react-redux";
-import {  resetPasswordAsync, selectPasswordReset } from "../authSlice";
+import {  resetPasswordAsync, selectLoginStatus, selectPasswordReset } from "../authSlice";
+import { Oval } from "react-loader-spinner";
 
 export function ResetPassword() {
     const passwordReset = useSelector(selectPasswordReset);
@@ -16,6 +17,7 @@ export function ResetPassword() {
   } = useForm();
   const err = errors;
   const dispatch = useDispatch();
+  const status = useSelector(selectLoginStatus);
 
   return (
     <>
@@ -106,7 +108,22 @@ export function ResetPassword() {
                 type="submit"
                 className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
-                Reset Password
+                {status === "loading" ? (
+                  <Oval
+                    height={24}
+                    width={24}
+                    color="white"
+                    wrapperStyle={{}}
+                    wrapperClass=""
+                    visible={true}
+                    ariaLabel="oval-loading"
+                    secondaryColor="white"
+                    strokeWidth={2}
+                    strokeWidthSecondary={2}
+                  />
+                ) : (
+                  "Reset Password"
+                )}
               </button>
             </div>
           </form>
