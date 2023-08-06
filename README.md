@@ -75,7 +75,6 @@ Live Website: [Premium Kart](https://premiumkart.vercel.app/)
 - `react-js`
 - `redux`
 - `tailwind css`
-- `firebase`
 - `node-js`
 - `express-js`
 - `mongoDB`
