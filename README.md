@@ -61,7 +61,7 @@ An E-commerce web Application which offers a seamless and secure shopping experi
     <th>Email recieved after order success</th>
   </tr>
   <tr>
-    <td><img src="./src/assets/invoice-mail.png" width=800 height=250></td>
+    <td><img src="./src/assets/invoice-mail.png" width=400 height=200></td>
   </tr>
   <tr>
     <th>Admin Panel</th>
@@ -102,5 +102,5 @@ Live Website: [Premium Kart](https://premiumkart.vercel.app/)
 - Shopping cart: Users can add items to their cart, manage quantities, and proceed to checkout seamlessly.
 - Payment integration: Secure payment gateways to ensure safe and convenient transactions.
 - Order tracking: Customers can track their orders and receive updates on the shipping status.
-- Admin panel: An intuitive dashboard for store owners to manage products and orders.
+- Admin panel: An intuitive dashboard for store owners to manage products, orders, and customer data.
 
