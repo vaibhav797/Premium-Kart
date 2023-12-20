@@ -27,14 +27,16 @@ An E-commerce web Application which offers a seamless and secure shopping experi
     <td><img src="./src/assets/home-2.png" width=400 height=200></td>
   </tr>
   <tr>
-    <th>Profile and Orders Info</th>
+    <th>Profile page</th>
+    <th>Orders Info page</th>
   </tr>
   <tr>
     <td><img src="./src/assets/profile.png" width=400 height=200></td>
     <td><img src="./src/assets/my-orders.png" width=400 height=200></td>
   </tr>
   <tr>
-    <th>Product Detail page and Cart</th>
+    <th>Product Detail page</th>
+    <th>Cart page</th>
   </tr>
   <tr>
     <td><img src="./src/assets/product-detail.png" width=400 height=200></td>
@@ -48,14 +50,18 @@ An E-commerce web Application which offers a seamless and secure shopping experi
     <td><img src="./src/assets/checkout-2.png" width=400 height=200></td>
   </tr>
   <tr>
-    <th>Payment Gateway and Order Success Page</th>
+    <th>Payment Gateway</th>
+    <th>Order Success Page</th>
   </tr>
   <tr>
     <td><img src="./src/assets/payment-gateway.png" width=400 height=200></td>
     <td><img src="./src/assets/order-success.png" width=400 height=200></td>
   </tr>
   <tr>
-    <td><img src="./src/assets/invoice-mail.png" width=400 height=200></td>
+    <th>Email recieved after order success</th>
+  </tr>
+  <tr>
+    <td><img src="./src/assets/invoice-mail.png" width=800 height=250></td>
   </tr>
   <tr>
     <th>Admin Panel</th>
