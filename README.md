@@ -17,6 +17,9 @@ An E-commerce web Application which offers a seamless and secure shopping experi
     <td><img src="./src/assets/signup.png" width=400 height=200></td>
   </tr>
   <tr>
+    <th>Reset Password</th>
+  </tr>
+  <tr>
     <td><img src="./src/assets/forgot-password.png" width=400 height=200></td>
   </tr>
   <tr>
@@ -28,7 +31,7 @@ An E-commerce web Application which offers a seamless and secure shopping experi
   </tr>
   <tr>
     <th>Profile page</th>
-    <th>Orders Info page</th>
+    <th>My Orders page</th>
   </tr>
   <tr>
     <td><img src="./src/assets/profile.png" width=400 height=200></td>
@@ -36,7 +39,7 @@ An E-commerce web Application which offers a seamless and secure shopping experi
   </tr>
   <tr>
     <th>Product Detail page</th>
-    <th>Cart page</th>
+    <th>My Cart page</th>
   </tr>
   <tr>
     <td><img src="./src/assets/product-detail.png" width=400 height=200></td>
@@ -65,10 +68,14 @@ An E-commerce web Application which offers a seamless and secure shopping experi
   </tr>
   <tr>
     <th>Admin Panel</th>
+    <th>Product Creating or Updation</th>
   </tr>
   <tr>
     <td><img src="./src/assets/admin-profile.png" width=400 height=200></td>
     <td><img src="./src/assets/admin-products.png" width=400 height=200></td>
+  </tr>
+  <tr>
+    <th>Processing placed orders</th>
   </tr>
   <tr>
     <td><img src="./src/assets/admin-orders.png" width=400 height=200></td>
